@@ -1,4 +1,4 @@
-#gh-docker-runner
+# gh-docker-runner
 
 This image allows you to run a self-hosted GitHub Action self-hosted runner
 
