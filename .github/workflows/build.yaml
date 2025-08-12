@@ -12,7 +12,7 @@ jobs:
       IMG_CACHE: ghcr.io/keller00/gh-docker-runner:${{ matrix.arch }}-latest
       IMG_VERSIONED: ghcr.io/keller00/gh-docker-runner:${{ matrix.arch }}-${{ github.sha }}
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
     - run: docker run --rm --privileged tonistiigi/binfmt --install arm64
       if: matrix.arch == 'arm64'
     - name: build
